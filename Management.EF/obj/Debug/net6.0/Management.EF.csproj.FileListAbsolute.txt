@@ -1,0 +1,14 @@
+C:\Users\Unkno\source\repos\MVCMangement-New\Management.EF\bin\Debug\net6.0\Management.EF.deps.json
+C:\Users\Unkno\source\repos\MVCMangement-New\Management.EF\bin\Debug\net6.0\Management.EF.runtimeconfig.json
+C:\Users\Unkno\source\repos\MVCMangement-New\Management.EF\bin\Debug\net6.0\Management.EF.dll
+C:\Users\Unkno\source\repos\MVCMangement-New\Management.EF\bin\Debug\net6.0\Management.EF.pdb
+C:\Users\Unkno\source\repos\MVCMangement-New\Management.EF\obj\Debug\net6.0\Management.EF.csproj.AssemblyReference.cache
+C:\Users\Unkno\source\repos\MVCMangement-New\Management.EF\obj\Debug\net6.0\Management.EF.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Unkno\source\repos\MVCMangement-New\Management.EF\obj\Debug\net6.0\Management.EF.AssemblyInfoInputs.cache
+C:\Users\Unkno\source\repos\MVCMangement-New\Management.EF\obj\Debug\net6.0\Management.EF.AssemblyInfo.cs
+C:\Users\Unkno\source\repos\MVCMangement-New\Management.EF\obj\Debug\net6.0\Management.EF.csproj.CoreCompileInputs.cache
+C:\Users\Unkno\source\repos\MVCMangement-New\Management.EF\obj\Debug\net6.0\Management.EF.dll
+C:\Users\Unkno\source\repos\MVCMangement-New\Management.EF\obj\Debug\net6.0\refint\Management.EF.dll
+C:\Users\Unkno\source\repos\MVCMangement-New\Management.EF\obj\Debug\net6.0\Management.EF.pdb
+C:\Users\Unkno\source\repos\MVCMangement-New\Management.EF\obj\Debug\net6.0\Management.EF.genruntimeconfig.cache
+C:\Users\Unkno\source\repos\MVCMangement-New\Management.EF\obj\Debug\net6.0\ref\Management.EF.dll

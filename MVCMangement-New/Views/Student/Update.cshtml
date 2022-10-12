@@ -1,0 +1,63 @@
+﻿@model StudentViewModel
+@using Management.EF.Models
+@using Management.EF
+
+@{
+    string pageType = Model.CurrentStudent.StudentId > 0 ? "Update Student" : "Create Student";
+
+    ViewData["Title"] = $"CRUD Applications | {pageType}";
+}
+
+<form action="~/Student/Index" method="post">
+    <div>
+        <div class="row">
+            <div class="col-6 offset-3 text-center">
+                <h1 class="display-4" style="margin: 20px 0px;">@pageType</h1>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="col-md-3 offset-md-3 form-group">
+                <label>District Code: </label>
+                <input type="number" class="form-control" name="districtID" value="@Model.CurrentStudent.DistrictId" />
+            </div>
+            <div class="col-md-3 offset-md-3 form-group">
+                <label>First Name: </label>
+                <input type="text" class="form-control" name="firstName" value="@Model.CurrentStudent.FirstName" />
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="col-md-6 offset-md-3 form-group">
+                <label>Last Name: </label>
+                <input type="text" class="form-control" name="lastName" value="@Model.CurrentStudent.LastName" />
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="col-md-6 offset-md-3 form-group">
+                <label>Date of Birth: </label>
+                <input type="date" class="form-control" name="dateOfBirth" value="@Model.CurrentStudent.DateofBirth" />
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="col-md-6 offset-md-3 form-group">
+                <label>Street Address: </label>
+                <input type="text" class="form-control" name="streetAddress" value="@Model.CurrentStudent.StreetAddress" />
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="col-md-6 offset-md-3 form-group">
+                <label>Grade Level: </label>
+                <input type="text" class="form-control" name="gradeLevel" value="@Model.CurrentStudent.GradeLevel" />
+            </div>
+        </div><br /><br />
+
+        <div class="form-row">
+            <div class="col-md-6 offset-md-3">
+                <button type="button" class="btn btn-secondary" onclick="location.href = '/Student/Index'">CANCEL</button>
+                <button type="submit" class="btn btn-primary">SAVE STUDENT</button>
+            </div>
+        </div>
+    </div>
+    <input type="hidden" name="studentID" value="@Model.CurrentStudent.StudentId" />
+</form>

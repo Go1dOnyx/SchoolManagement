@@ -1,0 +1,52 @@
+﻿@model SchoolViewModel
+@using Management.EF.Models
+
+@{
+    string pageType = Model.CurrentSchool.DistrictId > 0 ? "Update District" : "Create District";
+
+    ViewData["Title"] = $"CRUD Applications | {pageType}";
+}
+
+<form action="~/School/Index" method="post">
+    <div>
+        <div class="row">
+            <div class="col-6 offset-3 text-center">
+                <h1 class="display-4" style="margin: 20px 0px;">@pageType</h1>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="col-md-3 offset-md-3 form-group">
+                <label>School Name: </label>
+                <input type="text" class="form-control" name="schoolName" value="@Model.CurrentSchool.SchoolName" />
+            </div>
+            <div class="col-md-3 offset-md-3 form-group">
+                <label>Location: </label>
+                <input type="text" class="form-control" name="location" value="@Model.CurrentSchool.Location" />
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="col-md-6 offset-md-3 form-group">
+                <label>Administrator: </label>
+                <input type="text" class="form-control" name="administrator" value="@Model.CurrentSchool.Administrator" />
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="col-md-6 offset-md-3 form-group">
+                <label>Phone Number: </label>
+                <input type="tel" class="form-control" name="phoneNumber" value="@Model.CurrentSchool.PhoneNumber" />
+            </div>
+            <div class="col-md-6 offset-md-3 form-group">
+                <label>Total Students: </label>
+                <input type="number" class="form-control" name="totalStudents" value="@Model.CurrentSchool.TotalStudents" />
+            </div>
+        </div><br /><br />
+
+        <div class="form-row">
+            <div class="col-md-6 offset-md-3">
+                <button type="button" class="btn btn-secondary" onclick="window.location.href = '/School/Index'">CANCEL</button>
+                <button type="submit" class="btn btn-primary">SAVE SCHOOL</button>
+            </div>
+        </div>
+    </div>
+    <input type="hidden" name="districtID" value="@Model.CurrentSchool.DistrictId" />
+</form>
