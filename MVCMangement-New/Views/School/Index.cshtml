@@ -13,12 +13,12 @@
 
     function confirmDelete(id) {
         $("#hdnDeleteDistrictId").val(id);
-        openModal("deleteModal");
+        openModal("#deleteModal");
     }
 
     function cancelDelete() {
         $("#hdnDeleteDistrictId").val(0);
-        closeModal("deleteModal");
+        closeModal("#deleteModal");
     }
 
     function deleteSchool() {

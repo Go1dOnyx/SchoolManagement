@@ -13,12 +13,12 @@
 
     function confirmDelete(id) {
         $("#hdnDeleteStudentId").val(id);
-        openModal("deleteModal");
+        openModal("#deleteModal");
     }
 
     function cancelDelete() {
         $("#hdnDeleteStudentId").val(0);
-        closeModal("deleteModal");
+        closeModal("#deleteModal");
     }
 
     function deleteStudent() {
@@ -30,7 +30,7 @@
 <input type="hidden" id="hdnDeleteStudentId" value="0" />
 
 <div class="text-center">
-    @if (!String.IsNullOrEmpty(Model.ActionMessage))
+    @if (Model.IsActionSuccess && Model.ActionMessage != null)
     {
         string colorClass = Model.IsActionSuccess ? "alert-success" : "alert-danger";
 

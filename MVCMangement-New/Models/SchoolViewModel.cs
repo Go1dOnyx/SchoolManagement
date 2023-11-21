@@ -8,11 +8,11 @@ namespace MVCMangement_New.Models
 {
     public class SchoolViewModel
     {
-        private SchoolRepository _repo;
+        private SchoolRepository _repo; 
 
         public List<School> SchoolList { get; set; }
 
-        public School CurrentSchool { get; set; } = new School();
+        public School CurrentSchool { get; set; }// = new School();
 
         public bool IsActionSuccess { get; set; }
 
