@@ -1,5 +1,5 @@
 # MVCMangement-New
 School Management MVC Application
 
-
-This project still needs some work on*
+For this project using the MVC design pattern in ASP.NET to create CRUD application that helps manage a eductional system, 
+which is schools and student information. It will also be focusing on Front-End development style. 
