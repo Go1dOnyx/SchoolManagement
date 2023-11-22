@@ -16,11 +16,18 @@ namespace MVCMangement_New.Controllers
         public IActionResult Index()
         {
             return View();
+        } 
+
+        [HttpPost]
+        public IActionResult GoToSchool() 
+        {
+            return RedirectToAction("Index", "School");
         }
 
-        public IActionResult Privacy()
+        [HttpPost]
+        public IActionResult GoToStudent() 
         {
-            return View();
+            return RedirectToAction("Index","Student");
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

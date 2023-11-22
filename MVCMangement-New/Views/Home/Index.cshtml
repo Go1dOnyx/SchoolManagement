@@ -3,6 +3,48 @@
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <h1 class="display-1">The Educational Management Studio</h1>
+    <p>Learn about us. <a href="https://docs.microsoft.com/aspnet/core">Click here to learn more</a>.</p>
 </div>
+
+@{
+    <div class="formContainer">
+        <center>
+            <h1 class="display-5">Select Management</h1>
+            <form asp-action="GoToSchool" method="post">
+                <button class="btnFormat" type="submit">Schools</button>
+            </form>
+            <form  asp-action="GoToStudent" method="post">
+                <button class="btnFormat" type="submit">Students</button>
+            </form>
+        </center>
+    </div>
+}
+
+<style>
+    .formContainer {
+        border: 1px solid black;
+        border-radius: 10px;
+        padding: 10px;
+        margin-top: 7rem;
+    }
+    .btnFormat {
+        border:none;
+        border-radius: 10px;
+        margin: 1rem;
+        padding: 0%;
+        color: #c7c7c7;
+        width: 30%;
+        height: 20%;
+        font-family: Courier, Monospace;
+        font-size: 30px;
+        background-image: linear-gradient(to right, #8a425f, #c9552a);
+        box-shadow: 0 4px 15px 0 rgba(176, 144, 118, 0.2);
+        transition: transform 0.2s ease-in-out;
+    }
+    .btnFormat:hover {
+        box-shadow: 0 4px 15px 0 #b87137;
+        transform: scale(1.1);
+        color:white;
+    }
+</style>
