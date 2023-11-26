@@ -25,6 +25,9 @@
         var id = $("#hdnDeleteDistrictId").val();
         window.location.href = "/School/Delete/0" + id;
     }
+    function backToMain() {
+       window.location.href = '@Url.Action("Index","Home")';
+    }
 </script>
 
 <input type="hidden" id="hdnDeleteDistrictId" value="0" />
@@ -69,6 +72,9 @@
                 }
             </table>
         </div>
+    </div>
+    <div class="back-container" style="float:left;">
+        <button class="btn btn-danger" onclick="backToMain()"  type="button">BACK</button>
     </div>
 </div>
 

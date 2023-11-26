@@ -4,47 +4,80 @@
 
 <div class="text-center">
     <h1 class="display-1">The Educational Management Studio</h1>
-    <p>Learn about us. <a href="https://docs.microsoft.com/aspnet/core">Click here to learn more</a>.</p>
+    <p style="color: white;">Learn about us. <a href="https://docs.microsoft.com/aspnet/core">Click here to learn more</a>.</p>
 </div>
 
-@{
+
     <div class="formContainer">
-        <center>
-            <h1 class="display-5">Select Management</h1>
-            <form asp-action="GoToSchool" method="post">
-                <button class="btnFormat" type="submit">Schools</button>
-            </form>
-            <form  asp-action="GoToStudent" method="post">
-                <button class="btnFormat" type="submit">Students</button>
-            </form>
-        </center>
+        <div class="content-container first-content">
+            <h1 class="display-3">Welcome To EMS</h1>
+        <p style="color: #E0E0E0; text-indent: 10px;">
+            For this project, I'm using the MVC design pattern in 
+            ASP.NET to create a CRUD application that helps manage 
+            an educational system, which will be schools and student 
+            information. This application will be known as the 
+            Educational Management Studio (EMF) and will focus on my
+            front-end development style as well.
+        </p>
+        </div>
+        <div class="content-container second-content">
+            <center>
+                <h1 class="display-5">Select Management</h1>
+                <form asp-action="GoToSchool" method="post">
+                    <button class="btnFormat" type="submit">Schools</button>
+                </form>
+                <form asp-action="GoToStudent" method="post">
+                    <button class="btnFormat" type="submit">Students</button>
+                </form>
+            </center>
+        </div>
     </div>
-}
 
 <style>
     .formContainer {
-        border: 1px solid black;
+        border: 0.3px solid #292929;
         border-radius: 10px;
-        padding: 10px;
+        box-shadow: rgb(37, 37, 37 ) 0px 20px 30px -10px;
         margin-top: 7rem;
+        height: 30rem;
+    }
+    .content-container {
+        display: inline;
+    }
+    .first-content {
+        padding: 0.1rem;
+        width: 35%;
+        margin-top: 1rem;
+        margin-left: 5rem;
+        float: left;
+    }
+    .second-content {
+        border-left: 1px solid black;
+        padding-top: 2rem;
+        width: 50%;
+        height: 100%;
+        float:right;
     }
     .btnFormat {
         border:none;
         border-radius: 10px;
         margin: 1rem;
         padding: 0%;
-        color: #c7c7c7;
-        width: 30%;
+        color: #E0E0E0;
+        width: 25%;
         height: 20%;
         font-family: Courier, Monospace;
         font-size: 30px;
-        background-image: linear-gradient(to right, #8a425f, #c9552a);
+        background-color: #c9552a;
         box-shadow: 0 4px 15px 0 rgba(176, 144, 118, 0.2);
         transition: transform 0.2s ease-in-out;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
     .btnFormat:hover {
         box-shadow: 0 4px 15px 0 #b87137;
-        transform: scale(1.1);
+        transform: scale(0.9);
         color:white;
     }
 </style>
