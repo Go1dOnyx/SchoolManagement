@@ -25,6 +25,9 @@
         var id = $("#hdnDeleteStudentId").val();
         window.location.href = "/Student/Delete/0" + id;
     }
+    function BackToMain(){
+        window.location.href = '@Url.Action("Index","Home")';
+    }
 </script>
 
 <input type="hidden" id="hdnDeleteStudentId" value="0" />
@@ -32,14 +35,9 @@
 <div class="text-center">
     @if (Model.IsActionSuccess && Model.ActionMessage != null)
     {
-        string colorClass = Model.IsActionSuccess ? "alert-success" : "alert-danger";
-
-        <div class="alert @colorClass alert-dismissible fade show" role="alert">
-            <strong>@Model.ActionMessage</strong>
-            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-            </button>
-        </div>
+        <script>
+            alert("@Model.ActionMessage");
+        </script>
     }
 
     <h1 class="display-4">Student</h1>
@@ -71,6 +69,9 @@
                 }
             </table>
         </div>
+    </div>
+    <div class="back-container" style="float: left;">
+        <button class="btn btn-danger" style="margin-left: 10rem;" onclick="BackToMain()" type="button">BACK</button>
     </div>
 </div>
 

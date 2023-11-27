@@ -22,7 +22,7 @@ namespace MVCMangement_New.Models
         {
             _repo = new StudentRepository(context);
             StudentList = GetAllStudent();
-            CurrentStudent = StudentList.FirstOrDefault() !;
+            CurrentStudent = StudentList.FirstOrDefault()!;
         }
 
         public StudentViewModel(SchoolManagementContext context, int studentId)

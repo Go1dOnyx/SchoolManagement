@@ -25,15 +25,15 @@ namespace MVCMangement_New.Controllers
         [HttpPost]
         public IActionResult Index(int studentID, int distrcitID, string firstN, string lastN, DateTime birth, string addre, string grade)
         {
-            StudentViewModel model = new StudentViewModel(_context);
+                StudentViewModel model = new StudentViewModel(_context);
 
-            Student student = new(studentID, distrcitID, firstN, lastN, birth, addre, grade);
+                Student student = new(studentID, distrcitID, firstN, lastN, birth, addre, grade);
 
-            model.SaveStudent(student);
-            model.IsActionSuccess = true;
-            model.ActionMessage = "Student has been saved successfully";
+                model.SaveStudent(student);
+                model.IsActionSuccess = true;
+                model.ActionMessage = "Student has been saved successfully";
 
-            return View(model);
+                return View(model);
         }
 
         public IActionResult Update(int id)
