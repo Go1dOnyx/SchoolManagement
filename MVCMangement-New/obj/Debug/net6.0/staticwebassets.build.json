@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "g7kqiQYtUgE2s29kX8YlqvkeQXvEhEsA7pICNYcHAvs=",
+  "Hash": "/9lyvevddN9OU/WWbm3zgDMBfbadTu0gfEra30dqftg=",
   "Source": "MVCMangement-New",
   "BasePath": "_content/MVCMangement-New",
   "Mode": "Default",
@@ -85,6 +85,23 @@
       "OriginalItemSpec": "wwwroot\\css\\home.css"
     },
     {
+      "Identity": "C:\\Users\\Unkno\\source\\repos\\MVCMangement-New\\MVCMangement-New\\wwwroot\\css\\school-update.css",
+      "SourceId": "MVCMangement-New",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Unkno\\source\\repos\\MVCMangement-New\\MVCMangement-New\\wwwroot\\",
+      "BasePath": "_content/MVCMangement-New",
+      "RelativePath": "css/school-update.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\school-update.css"
+    },
+    {
       "Identity": "C:\\Users\\Unkno\\source\\repos\\MVCMangement-New\\MVCMangement-New\\wwwroot\\css\\site.css",
       "SourceId": "MVCMangement-New",
       "SourceType": "Discovered",
@@ -100,6 +117,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
+    },
+    {
+      "Identity": "C:\\Users\\Unkno\\source\\repos\\MVCMangement-New\\MVCMangement-New\\wwwroot\\css\\student-update.css",
+      "SourceId": "MVCMangement-New",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Unkno\\source\\repos\\MVCMangement-New\\MVCMangement-New\\wwwroot\\",
+      "BasePath": "_content/MVCMangement-New",
+      "RelativePath": "css/student-update.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\student-update.css"
     },
     {
       "Identity": "C:\\Users\\Unkno\\source\\repos\\MVCMangement-New\\MVCMangement-New\\wwwroot\\favicon.ico",

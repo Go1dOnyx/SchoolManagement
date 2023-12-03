@@ -13,8 +13,16 @@
       "PackagePath": "staticwebassets\\css\\home.css"
     },
     {
+      "Id": "C:\\Users\\Unkno\\source\\repos\\MVCMangement-New\\MVCMangement-New\\wwwroot\\css\\school-update.css",
+      "PackagePath": "staticwebassets\\css\\school-update.css"
+    },
+    {
       "Id": "C:\\Users\\Unkno\\source\\repos\\MVCMangement-New\\MVCMangement-New\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\Unkno\\source\\repos\\MVCMangement-New\\MVCMangement-New\\wwwroot\\css\\student-update.css",
+      "PackagePath": "staticwebassets\\css\\student-update.css"
     },
     {
       "Id": "C:\\Users\\Unkno\\source\\repos\\MVCMangement-New\\MVCMangement-New\\wwwroot\\favicon.ico",

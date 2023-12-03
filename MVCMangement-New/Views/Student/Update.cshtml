@@ -1,4 +1,5 @@
-﻿@model StudentViewModel
+﻿<link rel="stylesheet" href="~/css/student-update.css" asp-append-version="true" />
+@model StudentViewModel
 @using Management.EF.Models
 @using Management.EF
 
@@ -61,20 +62,3 @@
     </div>
     <input type="hidden" name="studentID" value="@Model.CurrentStudent.StudentId" />
 </form>
-
-<style>
-    .form-container {
-        border: 0.3px solid black;
-        border-radius: 10px;
-        padding: 2rem;
-        box-shadow: rgb(37, 37, 37 ) 0px 20px 30px -10px;
-    }
-    label {
-        color:white;
-    }
-    h1 {
-        text-decoration: underline;
-        text-decoration-thickness: 0.5px;
-        text-underline-offset: 0.5rem;
-    }
-</style>
