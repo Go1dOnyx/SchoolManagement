@@ -1,0 +1,83 @@
+.form-container {
+    border: 0.3px solid black;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: rgb(37, 37, 37 ) 0px 20px 30px -10px;
+    overflow: hidden;
+}
+
+.biograph-container {
+    border: 0.3px solid black;
+    border-radius: 10px;
+    padding: 0.5rem;
+    width: 40%;
+    float: left;
+}
+
+.skills-container {
+    border: 0.3px solid black;
+    border-radius: 10px;
+    padding: 0.5rem;
+    width: 40%;
+    float: right;
+}
+
+.social-container {
+    border: 0.3px solid black;
+    border-radius: 10px;
+    display: inline-block;
+    margin-top: 2rem;
+    padding: 0.5rem;
+    width: 40%;
+    float: left;
+}
+
+.back-btn-container {
+    margin-top: 2rem;
+}
+
+.list-inline {
+    display: inline-block;
+}
+
+p {
+    text-align: left;
+}
+
+li {
+    display: block;
+    text-align: left;
+}
+
+h1 {
+    text-decoration: underline;
+    text-decoration-thickness: 0.5px;
+    text-underline-offset: 0.5rem;
+}
+
+h4 {
+    color: white;
+    text-decoration: underline;
+    text-decoration-thickness: 0.5px;
+    text-underline-offset: 0.5rem;
+}
+
+.fa {
+    padding: 0.5rem;
+    font-size: 1.13rem;
+    border-radius: 5px;
+    width: 5.5rem;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+}
+
+.fa-linkedin {
+    color: white;
+    border: 0.5px solid #007bb5;
+}
+
+.fa:hover {
+    background: #007bb5;
+    color: white;
+}

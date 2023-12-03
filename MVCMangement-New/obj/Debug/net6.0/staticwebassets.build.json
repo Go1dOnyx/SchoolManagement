@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "rQas2vcrQunX0swleT9uGROrLeIkKYC5h46KjXXapSA=",
+  "Hash": "g7kqiQYtUgE2s29kX8YlqvkeQXvEhEsA7pICNYcHAvs=",
   "Source": "MVCMangement-New",
   "BasePath": "_content/MVCMangement-New",
   "Mode": "Default",
@@ -49,6 +49,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\Unkno\\source\\repos\\MVCMangement-New\\MVCMangement-New\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\MVCMangement-New.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\Unkno\\source\\repos\\MVCMangement-New\\MVCMangement-New\\wwwroot\\css\\about.css",
+      "SourceId": "MVCMangement-New",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Unkno\\source\\repos\\MVCMangement-New\\MVCMangement-New\\wwwroot\\",
+      "BasePath": "_content/MVCMangement-New",
+      "RelativePath": "css/about.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\about.css"
     },
     {
       "Identity": "C:\\Users\\Unkno\\source\\repos\\MVCMangement-New\\MVCMangement-New\\wwwroot\\css\\home.css",
@@ -1086,6 +1103,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Identity": "C:\\Users\\Unkno\\source\\repos\\MVCMangement-New\\MVCMangement-New\\wwwroot\\resume\\Jesus Diaz - Resume.pdf",
+      "SourceId": "MVCMangement-New",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Unkno\\source\\repos\\MVCMangement-New\\MVCMangement-New\\wwwroot\\",
+      "BasePath": "_content/MVCMangement-New",
+      "RelativePath": "resume/Jesus Diaz - Resume.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\resume\\Jesus Diaz - Resume.pdf"
     }
   ]
 }

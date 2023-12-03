@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\MVCMangement-New.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\Unkno\\source\\repos\\MVCMangement-New\\MVCMangement-New\\wwwroot\\css\\about.css",
+      "PackagePath": "staticwebassets\\css\\about.css"
+    },
+    {
       "Id": "C:\\Users\\Unkno\\source\\repos\\MVCMangement-New\\MVCMangement-New\\wwwroot\\css\\home.css",
       "PackagePath": "staticwebassets\\css\\home.css"
     },
@@ -247,6 +251,10 @@
     {
       "Id": "C:\\Users\\Unkno\\source\\repos\\MVCMangement-New\\MVCMangement-New\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "C:\\Users\\Unkno\\source\\repos\\MVCMangement-New\\MVCMangement-New\\wwwroot\\resume\\Jesus Diaz - Resume.pdf",
+      "PackagePath": "staticwebassets\\resume\\Jesus Diaz - Resume.pdf"
     },
     {
       "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.MVCMangement-New.Microsoft.AspNetCore.StaticWebAssets.props",

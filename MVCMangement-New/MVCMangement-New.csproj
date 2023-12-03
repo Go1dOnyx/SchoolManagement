@@ -19,4 +19,8 @@
     <ProjectReference Include="..\Management.EF\Management.EF.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\resume\" />
+  </ItemGroup>
+
 </Project>
