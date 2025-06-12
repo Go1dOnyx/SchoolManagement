@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "fTLbKCjgjXMLxfMTbkzCcFljwoV5zl8vqMEytFSROWfM6d9VhP1RUFXdXjnKfN5FIpnxuMCeEMEpozKuVuu2Zg==",
+  "dgSpecHash": "+c7nHXqFBob6z3BOPkNATnXF5KxGgnwOQEhAkBL7hhqBL8rdXEaM64OxO2/Wwe88YZD3lGFFRvyfeiBGh97oVw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Unkno\\source\\repos\\MVCMangement-New\\MVCMangement-New\\MVCMangement-New.csproj",
+  "projectFilePath": "C:\\Users\\Unkno\\source\\repos\\SchoolManagement\\MVCMangement-New\\MVCMangement-New.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Unkno\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Unkno\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",

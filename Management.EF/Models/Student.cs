@@ -1,26 +1,48 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace Management.EF.Models
 {
-    public partial class Student
+    public class Student
     {
-        public int StudentId { get; set; }
-        public int DistrictId { get; set; }
+        [Key]
+        public Guid StudentId { get; set; }
+
+        [Required]
+        public Guid SchoolId { get; set; }
+
+        [Required]
         public string? FirstName { get; set; }
+
+        public string? MiddleName { get; set; }
+
+        [Required]
         public string? LastName { get; set; }
+
+        [Required]
         public DateTime DateofBirth { get; set; }
-        public string? StreetAddress { get; set; }
-        public string? GradeLevel { get; set; }
-        public Student(int studentId, int districtId, string firstName, string lastName, DateTime dateofBirth, string streetAddress, string gradeLevel)
+
+        [Required]
+        public string? Address { get; set; }
+
+        [Required]
+        public int Grade { get; set; }
+
+        //Navigational Property for Courses
+        public School School { get; set; }
+        public List<Courses> Courses { get; set; }
+
+        public Student(Guid id, Guid schoolId, School school, string first, string middle, string last, DateTime birth, string address, int grade, List<Courses> courses)
         {
-            StudentId=studentId;
-            DistrictId=districtId;
-            FirstName=firstName;
-            LastName=lastName;
-            DateofBirth=dateofBirth;
-            StreetAddress=streetAddress;
-            GradeLevel=gradeLevel;
+            StudentId=id;
+            SchoolId=schoolId;
+            School=school;
+            FirstName=first;
+            MiddleName=middle;
+            LastName=last;
+            DateofBirth=birth;
+            Address=address;
+            Grade=grade;
+            Courses=courses;
         }
         public Student()
         {
