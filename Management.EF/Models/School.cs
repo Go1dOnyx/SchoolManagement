@@ -1,25 +1,41 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Management.EF.Models
 {
-    public partial class School
+    public class School
     {
-        public int DistrictId { get; set; }
-        public string SchoolName { get; set; } = null!;
-        public string Location { get; set; } = null!;
-        public string Administrator { get; set; } = null!;
-        public string PhoneNumber { get; set; } = null!;
-        public int TotalStudents { get; set; }
+        [Key]
+        public Guid SchoolId { get; set; }
 
-        public School(int districtId, string schoolName, string location, string administrator, string phoneNumber, int totalStudents)
+        [Required]
+        public string SchoolName { get; set; } = null!;
+
+        [Required]
+        public string Location { get; set; } = null!;
+
+        [Required]
+        public string Administrator { get; set; } = null!;
+
+        [Required]
+        public string Phone { get; set; } = null!;
+
+        //Navigational Property for students
+        public List<Student> Students { get; set; }
+        public List<Courses> Courses { get; set; }
+
+        //Computed Property - Not stored in the database
+        [NotMapped]
+        public int TotalStudentCount => Students?.Count ?? 0;
+        public School(Guid id, string name, string location, string administrator, string phone, List<Student> students, List<Courses> courses)
         {
-            DistrictId=districtId;
-            SchoolName=schoolName;
-            Location=location;
-            Administrator=administrator;
-            PhoneNumber=phoneNumber;
-            TotalStudents=totalStudents;
+            SchoolId = id;
+            SchoolName = name;
+            Location = location;
+            Administrator = administrator;
+            Phone = phone;
+            Students = students;
+            Courses = courses;
         }
         public School()
         {

@@ -1,0 +1,37 @@
+public class SchoolController : Controller
+{
+    private readonly SchoolContext _context;
+
+    public SchoolController(SchoolContext context)
+    {
+        _context = context;
+    }
+
+    public async Task<IActionResult> Index()
+    {
+        var schools = await _context.Schools
+            .Include(s => s.Students) // Ensure students are loaded
+            .ToListAsync();
+
+        return View(schools);
+    }
+}
+
+@model List<School>
+
+<table>
+    <tr>
+        <th>School Name</th>
+        <th>Location</th>
+        <th>Total Students</th>
+    </tr>
+
+    @foreach (var school in Model)
+    {
+        <tr>
+            <td>@school.Name</td>
+            <td>@school.Location</td>
+            <td>@school.TotalStudents</td>
+        </tr>
+    }
+</table>

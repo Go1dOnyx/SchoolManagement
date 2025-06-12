@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Unkno\\source\\repos\\MVCMangement-New\\Management.EF\\Management.EF.csproj": {}
+    "C:\\Users\\Unkno\\source\\repos\\SchoolManagement\\Management.EF\\Management.EF.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Unkno\\source\\repos\\MVCMangement-New\\Management.EF\\Management.EF.csproj": {
+    "C:\\Users\\Unkno\\source\\repos\\SchoolManagement\\Management.EF\\Management.EF.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Unkno\\source\\repos\\MVCMangement-New\\Management.EF\\Management.EF.csproj",
+        "projectUniqueName": "C:\\Users\\Unkno\\source\\repos\\SchoolManagement\\Management.EF\\Management.EF.csproj",
         "projectName": "Management.EF",
-        "projectPath": "C:\\Users\\Unkno\\source\\repos\\MVCMangement-New\\Management.EF\\Management.EF.csproj",
+        "projectPath": "C:\\Users\\Unkno\\source\\repos\\SchoolManagement\\Management.EF\\Management.EF.csproj",
         "packagesPath": "C:\\Users\\Unkno\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Unkno\\source\\repos\\MVCMangement-New\\Management.EF\\obj\\",
+        "outputPath": "C:\\Users\\Unkno\\source\\repos\\SchoolManagement\\Management.EF\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -39,6 +39,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -72,7 +77,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.205\\RuntimeIdentifierGraph.json"
         }
       }
     }

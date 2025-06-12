@@ -19,6 +19,8 @@ namespace Management.EF.Context
 
         public virtual DbSet<School> Schools { get; set; } = null!;
         public virtual DbSet<Student> Students { get; set; } = null!;
+        public virtual DbSet<Admins> Admins { get; set; } = null!;
+        public virtual DbSet<Courses> Courses { get; set; } = null!;
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -36,36 +38,74 @@ namespace Management.EF.Context
         {
             modelBuilder.Entity<School>(entity =>
             {
-                entity.HasKey(e => e.DistrictId);
+                entity.HasKey(e => e.SchoolId);
 
-                entity.Property(e => e.DistrictId).HasColumnName("DistrictID");
+                entity.Property(e => e.SchoolId)
+                    .HasColumnName("SchoolID")
+                    .ValueGeneratedOnAdd();
 
-                entity.Property(e => e.Administrator).HasMaxLength(50);
+                entity.Property(e => e.Administrator)
+                    .IsRequired()    
+                    .HasMaxLength(50);
 
-                entity.Property(e => e.Location).HasMaxLength(50);
+                entity.Property(e => e.Location)
+                    .IsRequired()
+                    .HasMaxLength(255);
 
-                entity.Property(e => e.PhoneNumber).HasMaxLength(12);
+                entity.Property(e => e.Phone)
+                    .IsRequired()
+                    .HasMaxLength(12);
 
-                entity.Property(e => e.SchoolName).HasMaxLength(50);
+                entity.Property(e => e.SchoolName)
+                    .IsRequired()
+                    .HasMaxLength(255);
+
+                entity.HasMany(e => e.Students)
+                    .WithOne(st => st.School) //Navigational Property
+                    .HasForeignKey(e => e.SchoolId) //Students have foreign key of SchoolId
+                    .OnDelete(DeleteBehavior.Cascade); //If School is deleted, then the remaining Students would be too. 
+
+                entity.HasMany(e => e.Courses)
+                    .WithOne(e => e.School)
+                    .HasForeignKey(e => e.SchoolId)
+                    .OnDelete(DeleteBehavior.Cascade);
             });
 
             modelBuilder.Entity<Student>(entity =>
             {
-                entity.Property(e => e.StudentId).HasColumnName("StudentID");
+                entity.HasKey(e => e.SchoolId);
 
-                entity.Property(e => e.DateofBirth).HasColumnType("date");
+                entity.Property(e => e.StudentId)
+                    .HasColumnName("StudentID")
+                    .ValueGeneratedOnAdd();
 
-                entity.Property(e => e.DistrictId).HasColumnName("DistrictID");
+                entity.Property(e => e.DateofBirth)
+                    .IsRequired()
+                    .HasColumnType("date");
 
-                entity.Property(e => e.FirstName).HasMaxLength(50);
+                entity.Property(e => e.SchoolId)
+                    .IsRequired()
+                    .HasColumnName("SchoolID");
 
-                entity.Property(e => e.GradeLevel)
+                entity.Property(e => e.FirstName)
+                    .IsRequired()
+                    .HasMaxLength(50);
+
+                entity.Property (e => e.MiddleName).HasMaxLength(50);
+
+                entity.Property(e => e.LastName)
+                    .IsRequired()
+                    .HasMaxLength(50);
+
+                entity.Property(e => e.Grade)
                     .HasMaxLength(15)
                     .IsFixedLength();
 
-                entity.Property(e => e.LastName).HasMaxLength(50);
+                entity.Property(e => e.Address)
+                    .IsRequired()
+                    .HasMaxLength(50);
 
-                entity.Property(e => e.StreetAddress).HasMaxLength(50);
+                entity.HasOne
             });
 
             OnModelCreatingPartial(modelBuilder);
