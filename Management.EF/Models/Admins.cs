@@ -21,11 +21,11 @@ namespace Management.EF.Models
         [Required]
         public string? LastName { get; set; }
 
-        //Roles 
+        //Roles Ex: Super Admin, Manager, Agent
         [Required]
-        public string? Role {  get; set; }
+        public string? Role { get; set; }
 
-        public Admins(Guid id, string email, string pass_hash, string first, string middle, string last, string role) 
+        public Admins(Guid id, string email, string pass_hash, string first, string middle, string last, string role)
         {
             AdminId = id;
             Email = email;

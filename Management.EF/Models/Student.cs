@@ -33,16 +33,16 @@ namespace Management.EF.Models
 
         public Student(Guid id, Guid schoolId, School school, string first, string middle, string last, DateTime birth, string address, int grade, List<Courses> courses)
         {
-            StudentId=id;
-            SchoolId=schoolId;
-            School=school;
-            FirstName=first;
-            MiddleName=middle;
-            LastName=last;
-            DateofBirth=birth;
-            Address=address;
-            Grade=grade;
-            Courses=courses;
+            StudentId = id;
+            SchoolId = schoolId;
+            School = school;
+            FirstName = first;
+            MiddleName = middle;
+            LastName = last;
+            DateofBirth = birth;
+            Address = address;
+            Grade = grade;
+            Courses = courses;
         }
         public Student()
         {
