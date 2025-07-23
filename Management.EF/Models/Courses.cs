@@ -21,8 +21,7 @@ namespace Management.EF.Models
 
         //Navigational Property
         public School School { get; set; }
-        public List<Student> Students { get; set; }
-        public Courses(Guid id, Guid schoolID, School school, List<Student> students, string name, string description, string teacher)
+        public Courses(Guid id, Guid schoolID, School school, string name, string description, string teacher)
         {
             CourseId = id;
             SchoolId = schoolID;
@@ -30,7 +29,6 @@ namespace Management.EF.Models
             CourseName = name;
             CourseDescription = description;
             Teacher = teacher;
-            Students = students;
         }
 
         public Courses() { }

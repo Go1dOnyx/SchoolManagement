@@ -21,7 +21,7 @@ namespace Management.EF.Models
         [Required]
         public string? LastName { get; set; }
 
-        //Roles Ex: Super Admin, Manager, Agent
+        //Roles 
         [Required]
         public string? Role {  get; set; }
 
